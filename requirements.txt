@@ -3,5 +3,6 @@ tqdm
 requests
 openai
 langchain
+langchain-community
 python-dotenv
 faiss-cpu

@@ -1,0 +1,7 @@
+streamlit
+tqdm
+requests
+openai
+langchain
+python-dotenv
+faiss-cpu

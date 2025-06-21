@@ -8,11 +8,14 @@ import openai
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
+import streamlit as st
 
 # .env에서 API key 가져오기
-load_dotenv()
+# load_dotenv()
+# api_key = os.getenv("OPENAI_API_KEY")
 
-api_key = os.getenv("OPENAI_API_KEY")
+# streamlit secrets.toml에서 API key 가져오기
+api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key=api_key)
 
 # 저장된 PDB ID 기록 파일 경로
